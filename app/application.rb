@@ -8,7 +8,7 @@ class Application
     
     if req.path.match(/items/)
     item_name = req.path.split("/items/").last
-    #binding.pry
+    binding.pry
       if @@items.include?(item_name)
         end
       else
