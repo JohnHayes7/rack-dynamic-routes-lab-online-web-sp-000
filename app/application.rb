@@ -12,6 +12,8 @@ class Application
       if @@items.each{|i| i.name == item_name}
         resp.write i.price
       else
+        resp.status = 400
+        resp.write "Item not found"
       end
     else
       resp.status = 404
