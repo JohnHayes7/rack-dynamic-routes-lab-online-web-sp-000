@@ -11,7 +11,7 @@ class Application
     binding.pry
       if @@items.each{|i| i.name ==
         
-        
+      end
     else
       resp.status = 404
       resp.write "Invalid Path"
