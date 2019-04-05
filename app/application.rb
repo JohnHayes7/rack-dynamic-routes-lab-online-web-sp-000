@@ -14,6 +14,6 @@ class Application
 #     end
    end
    
-   def each 
+   def self.each 
    end
 end
