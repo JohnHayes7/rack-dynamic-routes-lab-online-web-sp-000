@@ -10,7 +10,7 @@ class Application
     item_name = req.path.split("/items/").last
     # binding.pry
       if @@items.each{|i| i.name == item_name}
-        
+        resp.write i.price
       end
     else
       resp.status = 404
