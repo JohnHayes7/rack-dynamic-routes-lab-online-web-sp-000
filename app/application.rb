@@ -9,7 +9,8 @@ class Application
     if req.path.match(/items/)
     item_name = req.path.split("/items/").last
     # binding.pry
-      if @@items.each{|i| i.name == item_name}
+      if @@items.each do |i| 
+        item = i.name == item_name
         resp.write i.price
       else
         resp.status = 400
