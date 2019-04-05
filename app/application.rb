@@ -11,7 +11,7 @@ class Application
     # binding.pry
       if @@items.each do |i| 
         item = i.name == item_name
-        resp.write i.price
+        resp.write item.price
       else
         resp.status = 400
         resp.write "Item not found"
