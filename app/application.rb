@@ -17,7 +17,7 @@ class Application
       end
     else
       resp.status = 404
-      resp.write "Invalid Path"
+      resp.write "Route "
     end
    end
    
