@@ -11,7 +11,6 @@ class Application
       if @@items.find{|i| i.name == item_name}
         item = @@items.find{|i| i.name == item_name}
         item.price
-        
       else
         resp.status = 400
         resp.write "Item not found"
