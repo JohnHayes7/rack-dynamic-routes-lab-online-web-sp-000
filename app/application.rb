@@ -9,7 +9,8 @@ class Application
     if req.path.match(/items/)
     item_name = req.path.split("/items/").last
     binding.pry
-      if @@items.find{|i| i.name == item_name
+      if @@items.find{|i| i.name == item_name}
+        
   
       else
         resp.status = 400
