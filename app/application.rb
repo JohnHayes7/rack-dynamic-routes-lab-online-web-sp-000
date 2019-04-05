@@ -8,10 +8,8 @@ class Application
     
     if req.path.match(/items/)
     item_name = req.path.split("/items/").last
-    item = nil
-      if @@items.find do |i| 
-        i.name == item_name
-        item = i 
+      if @@items.find{|i| i.name == item_name}
+        
         end
         item.price
         
