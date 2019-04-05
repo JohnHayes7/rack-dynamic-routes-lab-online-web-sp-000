@@ -7,7 +7,9 @@ class Application
     req = Rack::Request.new(env)
     
     if req.path.match(/items/)
-      if 
+      if @@items.include?
+        
+        
     else
       resp.status = 404
       resp.write "Invalid Path"
