@@ -7,7 +7,8 @@ class Application
     req = Rack::Request.new(env)
     
     if req.path.match(/items/)
-      if @@items.include?
+    item_name = req.path.split("/items/").last
+      if @@items.each{|i| i.name ==
         
         
     else
