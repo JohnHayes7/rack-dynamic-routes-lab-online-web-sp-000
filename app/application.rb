@@ -1,6 +1,10 @@
 require "pry"
 class Application
   
+  def self.each 
+    
+  end
+  
    def call(env)
   
     resp = Rack::Response.new 
