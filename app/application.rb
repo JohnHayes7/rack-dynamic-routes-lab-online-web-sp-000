@@ -13,7 +13,7 @@ class Application
         i.name == item_name
         item = i 
         end
-  
+        item.price
       else
         resp.status = 400
         resp.write "Item not found"
