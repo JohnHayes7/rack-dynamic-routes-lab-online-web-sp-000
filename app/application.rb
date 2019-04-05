@@ -9,9 +9,7 @@ class Application
     if req.path.match(/items/)
     item_name = req.path.split("/items/").last
     # binding.pry
-      if @@items.each do |i| 
-        item = i.name == item_name
-        resp.write item.price
+      if @@items.include?(item_name)
         end
       else
         resp.status = 400
