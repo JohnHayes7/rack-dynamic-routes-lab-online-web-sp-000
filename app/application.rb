@@ -8,6 +8,7 @@ class Application
     
     if req.path.match(/items/)
     item_name = req.path
+    binding.pry
       if @@items.each{|i| i.name ==
         
         
